@@ -61,16 +61,16 @@
     <nav>
         <div class="navegation-container"> 
             <div class="nav-left-container">
-                <a href="index.html" id="logo-title"> Luks Car </a>
+                <a href="index.php" id="logo-title"> Luks Car </a>
             </div>
             <div class="nav-mid-container">
                 <ul class="item-list">
-                    <li id="item-list-number1"><a href="review.html">Avaliações</a></li>
-                    <li id="ite-list-number2"><a href="join.html">Entrar</a></li>
+                    <li id="item-list-number1"><a href="review.php">Avaliações</a></li>
+                    <li id="ite-list-number2"><a href="join.php">Entrar</a></li>
                 </ul>
             </div>
             <div class="nav-right-container">
-                <a href="register.html">REGISTRE-SE</a>
+                <a href="register.php">REGISTRE-SE</a>
             </div>
         </div>
     </nav>
@@ -86,19 +86,19 @@
         <div class="grid-container">
             <div class="grid-item">
                 <div class="nav-right-container">
-                    <a href="M3.html">BMW M3</a>
+                    <a href="M3.php">BMW M3</a>
                 </div>
                 <img src="m31.jpg" width="420px" height="220px">
             </div>
             <div class="grid-item">
                 <div class="nav-right-container">
-                    <a href="e63.html">e63 AMG</a>
+                    <a href="e63.php">e63 AMG</a>
                 </div>
                 <img src="e61.jpg" width="420px" height="220px">
             </div>
             <div class="grid-item">
                 <div class="nav-right-container">
-                    <a href="camaro.html">Camaro 2014</a>
+                    <a href="camaro.php">Camaro 2014</a>
                 </div>
                 <img src="cam3.jpg" width="420px" height="220px">
             </div>
@@ -107,17 +107,17 @@
     <section class="reasons-section">
         <div class="grid-container">
          <div class="grid-item"><div class="nav-right-container">
-            <a href="porsche.html">Porsche Cayenne</a>
+            <a href="porsche.php">Porsche Cayenne</a>
          </div>
          <img src="porsche.jpg" width="420px" height="220px"></div>
 
          <div class="grid-item"><div class="nav-right-container">
-            <a href="sf90.html">Ferrari SF90 Stradale</a>
+            <a href="sf90.php">Ferrari SF90 Stradale</a>
          </div>
          <img src="sf901.jpeg" width="420px" height="220px"></div>
          
          <div class="grid-item"><div class="nav-right-container">
-            <a href="aventador.html">Lamborghini Aventador</a>
+            <a href="aventador.php">Lamborghini Aventador</a>
          </div>
          <img src="aventador.jpg" width="420px" height="220px"></div>
        </div>

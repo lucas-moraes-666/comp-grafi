@@ -16,16 +16,16 @@
     <nav>
         <div class="navegation-container"> 
             <div class="nav-left-container">
-                <a href="index.html" id="logo-title"> Luks Car </a>
+                <a href="index.php" id="logo-title"> Luks Car </a>
             </div>
             <div class="nav-mid-container">
                 <ul class="item-list">
-                    <li id="item-list-number1"><a href="review.html">Avaliações</a></li>
-                    <li id="ite-list-number2"><a href="join.html">Entrar</a></li>
+                    <li id="item-list-number1"><a href="review.php">Avaliações</a></li>
+                    <li id="ite-list-number2"><a href="join.php">Entrar</a></li>
                 </ul>
             </div>
             <div class="nav-right-container">
-                <a href="register.html">REGISTRE-SE</a>
+                <a href="register.php">REGISTRE-SE</a>
             </div>
         </div>
     </nav>
@@ -55,10 +55,10 @@
                 </p>
                 </div>
                 <div class="nav-right-container">
-                    <a href="aventador.html">NÃO</a>
+                    <a href="aventador.php">NÃO</a>
                 </div>
                 <div class="nav-right-container">
-                    <a href="confirmado.html">SIM</a>
+                    <a href="confirmado.php">SIM</a>
                 </div>
         </div>
     </footer>
