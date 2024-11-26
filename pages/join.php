@@ -1,3 +1,36 @@
+<?php
+include_once('config.php');
+
+// Verifica se houve um envio de formulário
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Recebe os dados do formulário
+  $email = $_POST["email"];
+  $senha = $_POST["senha"];
+
+  // Validação básica (adicione mais validações conforme necessário)
+  if (empty($email) || empty($senha)) {
+    echo "Por favor, preencha todos os campos.";
+  } else {
+    // Consulta ao banco de dados (ajuste a consulta para sua estrutura)
+    $sql = "SELECT * FROM usuario WHERE email='$email' AND senha='$senha'";
+    $result = $conexao->query($sql);
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+
+        // Verifica o tipo de usuário
+        if ($row['tipo'] == 1) {
+            // Login válido para administrador, redireciona para adm.php
+            header("Location: ADM.php");
+    } else {
+      echo "Email ou senha inválidos.";
+    }
+  }
+}
+}
+// Formulário HTML
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,21 +66,20 @@
             <img src="mercedes-car.png" width="420px" height="220px">
         </div>
         <div class="index-text-container"> 
-            <h1>Luks Car</h1>
+            <h1>Login</h1>
             <div class="index-sub-text-container">
-                <h2>Procurando por veiculos?</h2>
-                <h2>nossa loja oferece o melhor serviço de vendas do ramo</h2>
+                <h2>Faça login de sua conta</h2>
             </div>
         </div>
     </main>
     <section class="login-section">
         <div class="login-container">
             <h2>Entrar na Sua Conta</h2>
-            <form action="/login" method="post">
+            <form action="join.php" method="post">
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email"><br>
-                <label for="password">Senha:</label><br>
-                <input type="password" id="password" name="password"><br><br>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha"><br><br>
                 <input type="submit" value="Entrar">
             </form>
             <p>Ainda não tem uma conta? <a href="register.php">Registre-se</a></p>

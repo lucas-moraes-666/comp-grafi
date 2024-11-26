@@ -5,7 +5,7 @@ include_once('config.php');
 if ($conexao->connect_error) {
     die("Erro de conexão com o banco de dados: " . $conexao->connect_error);
 }
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Receber dados do formulário
 if (isset($_POST['nome'])  && isset($_POST['email']) && isset($_POST['senha'])) {
     $nome = $_POST['nome'];
@@ -16,14 +16,14 @@ if (isset($_POST['nome'])  && isset($_POST['email']) && isset($_POST['senha'])) 
 }
 
 // Verificar se o e-mail já existe
-$sql_verifica_email = "SELECT COUNT(*) FROM usuarios WHERE email = '$email'";
+$sql_verifica_email = "SELECT COUNT(*) FROM usuario WHERE email = '$email'";
 $resultado_verifica = $conexao->query($sql_verifica_email);
 
 if ($resultado_verifica->fetch_row()[0] > 0) {
     echo "Erro: E-mail já cadastrado. Tente outro e-mail.";
 } else {
     // Se o e-mail não existir, prosseguir com a inserção
-    $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+    $sql = "INSERT INTO usuario (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
 
     if ($conexao->query($sql) === TRUE) {
         echo "Usuário cadastrado com sucesso!";
@@ -31,7 +31,7 @@ if ($resultado_verifica->fetch_row()[0] > 0) {
         echo "Erro ao cadastrar o usuário: " . $conexao->error;
     }
 }
-
+}
 $conexao->close();
 
     
@@ -73,8 +73,7 @@ $conexao->close();
         <div class="index-text-container"> 
             <h1>Luks Car</h1>
             <div class="index-sub-text-container">
-                <h2>Procurando por aluguel de veiculos?</h2>
-                <h2>nossa loja oferece o melhor serviço desse ramo</h2>
+                <h2>Crie sua conta</h2>
             </div>
         </div>
     </main>

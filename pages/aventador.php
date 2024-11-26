@@ -34,7 +34,8 @@
             <img src="lamborghini1-Photoroom.png" width="700px" height="500px">
         </div>
         <div class="index-text-container"> 
-            <h1>Lamborghini Avetador</h1>
+            <h1>Lamborghini Aventador</h1>
+            <h2>R$: 6.000.000,00</h2>
         </div>
     </main>
     <section class="reasons-section">

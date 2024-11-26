@@ -55,6 +55,20 @@
     #img2{
         width: 400px;
     }
+    
+    /* SECCION RESPONSIVE */
+@media screen and (max-width: 850px) {
+    .contenedor {
+      display: block;
+    }
+    .contenedor-items{
+        width: 100% !important;
+    }
+    .carrito{
+        width: 100%;
+    }
+  }
+
     </style>
 </head>
 <body>
@@ -73,6 +87,9 @@
                 <a href="register.php">REGISTRE-SE</a>
             </div>
         </div>
+        <div class="nav-right-container">
+                <a href="compra.php">carrinho de compra</a>
+            </div>
     </nav>
     <main>
         <div class="index-image-container">
@@ -92,7 +109,7 @@
             </div>
             <div class="grid-item">
                 <div class="nav-right-container">
-                    <a href="e63.php">e63 AMG</a>
+                    <a href="e63.php">E63 AMG</a>
                 </div>
                 <img src="e61.jpg" width="420px" height="220px">
             </div>
@@ -107,9 +124,9 @@
     <section class="reasons-section">
         <div class="grid-container">
          <div class="grid-item"><div class="nav-right-container">
-            <a href="porsche.php">Porsche Cayenne</a>
+            <a href="porsche.php">Porsche GT3 RS</a>
          </div>
-         <img src="porsche.jpg" width="420px" height="220px"></div>
+         <img src="gt3rs1.jpg" width="420px" height="220px"></div>
 
          <div class="grid-item"><div class="nav-right-container">
             <a href="sf90.php">Ferrari SF90 Stradale</a>
@@ -146,3 +163,4 @@
     </footer>
 </body>
 </html>
+

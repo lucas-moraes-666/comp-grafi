@@ -34,14 +34,15 @@
             <img src="porsche5.png" width="350px" height="350px">
         </div>
         <div class="index-text-container"> 
-            <h1>Porsche Cayenne</h1>
+            <h1>Porsche GT3 RS</h1>
+            <h2>R$ 3.650.000<h2>
         </div>
     </main>
     <section class="reasons-section">
         <div>
-            <img src="porsche2.jpg" width="420px" height="220px">
-            <img src="porsche.jpg" width="420px" height="220px">
-            <img src="porsche3.jpg" width="420px" height="220px">
+            <img src="gt3rs1.jpg" width="420px" height="220px">
+            <img src="gt3rs2.jpg" width="420px" height="220px">
+            <img src="gt3rs3.jpg" width="420px" height="220px">
         </div>
     </section>  
     
@@ -49,10 +50,10 @@
     <footer>
         <div class="footer-container">
             <div class="footer-left">
-                <h3>Porsche Cayenne</h3>
-                <p>O Porsche Cayenne é um SUV de luxo de porte médio fabricado pela montadora alemã Porsche desde 2002. Foi o primeiro SUV da Porsche e desde então se tornou um dos modelos mais vendidos da marca. 
-                    O Cayenne oferece uma combinação de desempenho, luxo e utilidade, o que contribuiu para sua popularidade entre os consumidores que desejam tanto esportividade quanto praticidade em um veículo. Ao longo dos anos,
-                     o Cayenne passou por várias atualizações e redesenhos, incorporando novas tecnologias e recursos, mantendo sua reputação de alto desempenho e qualidade premium</p>
+                <h3>Porsche GT3 RS</h3>
+                <p>O Porsche 911 GT3 RS 992 é uma maravilha da engenharia alemã, projetado para ser o carro esportivo mais focado em pista.
+                     Com seu motor boxer de 4.0 litros produzindo mais de 500 cavalos de potência, é o sonho dos viciados em adrenalina.
+                      O pacote aerodinâmico, a construção leve e a dirigibilidade impecável o tornam uma fera na estrada e na pista.</p>
             </div>
             <div class="nav-right-container">
                 <a href="compra.php">COMPRAR</a>

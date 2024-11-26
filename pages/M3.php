@@ -35,6 +35,7 @@
         </div>
         <div class="index-text-container"> 
             <h1>BMW M3</h1>
+            <h2>R$ 672.900<h2>
         </div>
     </main>
     <section class="reasons-section">
